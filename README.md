@@ -1,6 +1,6 @@
 # HopeThisDoesntFail
 
-## First Light Proof of Concept
+## **First Light** Proof of Concept
 
 An STG with classic elements and new ideas. A small project to evaluate, test, and develop First Light in a "trial by fire" scenario.
 
@@ -21,7 +21,7 @@ A *Common Lisp* game.
 
 Level Themes (determined partially by **story**)
 | Level |Visual Theme  |
-|--|--|
+|---|---|
 |0|  |
 |1 |  |
 |2 |  |
