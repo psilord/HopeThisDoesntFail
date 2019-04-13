@@ -1,6 +1,6 @@
 # HopeThisDoesntFail
 
-## **First Light** Proof of Concept
+## First Light - Proof of Concept
 
 An STG with classic elements and new ideas. A small project to evaluate, test, and develop First Light in a "trial by fire" scenario.
 
@@ -20,14 +20,16 @@ A *Common Lisp* game.
  - No magic girls, military only.
 
 Level Themes (determined partially by **story**)
+
 | Level |Visual Theme  |
 |---|---|
-|0|  |
-|1 |  |
-|2 |  |
-|3 |  |
-|4 |  |
+|0  |   |
+|1  |   |
+|2  |   |
+|3  |   |
+|4  |   |
 |Omega Zone |  |
+
 
 ## The Idea Bin
 Clown shot bullets used tastefully. (Bullets split and fork, zig zag, circle back then resume, sine wave)
