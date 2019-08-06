@@ -23,6 +23,9 @@ A *Common Lisp* game.
    unlockables can only be unlocked in Arcade Mode. These have to be visually
    marked so the player knows they are only unlockable in arcade mode.
  - No need for continue system since they can have all the practice they want.
+ - Game screen is effective 240x320 (vertical orientation) with 16x16 tiles.
+ - If we need enemies that appear to be made with with larger tiles
+   we'll compose them out of the smaller ones.
 
 One property I like is the big level sort of becomes an endurance test. Like, 
 we can record pausings (and amount of time that was spent in pause)
