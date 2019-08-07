@@ -45,8 +45,14 @@ beginning and ending.
 |4  | Mountains & Glaciers |
 |5  | Large (like minutes to cross) crashed alien ship in mountains  |
 
-## Story (maybe takes place in 1993, Earth)
+## Story (15 minutes into the future)
 
+### Summary
+
+An alien ship has crashed into the mountains and two human political
+factions are fighting each other to get to the wreckage. However, alien
+ships start pouring out of the wreckage and decimate both groups causing
+them to join together and defeat the overwhelming threat.
 
 
 
