@@ -45,7 +45,9 @@ beginning and ending.
 |4  | Mountains & Glaciers |
 |5  | Large (like minutes to cross) crashed alien ship in mountains  |
 
-## Story
+## Story (maybe takes place in 1993, Earth)
+
+
 
 
 ## The Idea Bin
