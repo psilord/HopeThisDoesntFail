@@ -1,0 +1,79 @@
+* TODO Enemies [0/3] -------------------------------------------------
+  - [ ] Submarine
+    - Appearance: Cannonball black with blue sheen,
+    - Movement: Emerges from waves, fires torpedos that become airborne
+    - Other Notes
+    - [ ] Sprite
+    - [ ] Weapon  
+    - [ ] Implemented
+  - [ ] Helicopter
+    - Appearance:
+    - Movement: Drops down, pauses, fires moves toward opposite side of screen
+    - Other Notes
+    - [ ] Sprite
+    - [ ] Weapon  
+    - [ ] Implemented
+  - [ ] Turret (cannon)
+    - Appearance: Sits on a metal base plate, 8 way aiming
+    - Movement: Points toward nearest octant player occupies.
+    - Other Notes
+    - [ ] Sprite
+    - [ ] Weapon  
+    - [ ] Implemented
+ 
+* TODO Bosses [0/3] -------------------------------------------------
+  - [ ] Mega Tank MK III "Land Crawler"
+    - Appearance: Two treads with rails between and cannon that moves on rails
+                  Treads encased in chunky housings with driver on one side.
+    - Movement: Appears to constantly roll backward (looping ground tiles)
+    - Other Notes
+    - [ ] Sprite
+    - [ ] Weapon  
+    - [ ] Implemented
+ 
+ 
+* TODO Levels [0%] -----------------------------------------------------
+  - [ ] Define comfortable speed
+  - [ ] *Islands/Coastline* [0/6]
+    - [ ] Drawing
+    - [ ] Tiles
+    - [ ] Map
+    - [ ] New Enemies Designed (Submarine, Helicopter, Turret)
+    - [ ] Ememies Placed
+    - [ ] Boss
+  - [ ] *Swamps* [0/6]
+    - [ ] Drawing
+    - [ ] Tiles
+    - [ ] Map
+    - [ ] New Enemies Designed
+    - [ ] Ememies Placed
+    - [ ] Boss
+  - [ ] *Forests & Lakes* [0/6]
+    - [ ] Drawing
+    - [ ] Tiles
+    - [ ] Map
+    - [ ] New Enemies Designed
+    - [ ] Ememies Placed
+    - [ ] Boss
+  - [ ] *Shrubland & Rocky Outcroppings* [0/6]
+    - [ ] Drawing
+    - [ ] Tiles
+    - [ ] Map
+    - [ ] New Enemies Designed
+    - [ ] Ememies Placed
+    - [ ] Boss
+  - [ ] *Mountains & Glaciers* [0/6]
+    - [ ] Drawing
+    - [ ] Tiles
+    - [ ] Map
+    - [ ] New Enemies Designed
+    - [ ] Ememies Placed
+    - [ ] Boss
+  - [ ] *Infestation* [0/7]
+    - [ ] Drawing
+    - [ ] Tiles
+    - [ ] Map
+    - [ ] New Enemies Designed
+    - [ ] Ememies Placed
+    - [ ] Boss
+    - [ ] Final Boss v 2.0
