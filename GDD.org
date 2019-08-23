@@ -1,3 +1,11 @@
+
+
+* TODO Design [0/4]
+  - [ ] Life system without checkpoint restart
+  - [ ] Practice Mode (infinite lives, skip to any area, score doesn't save)
+  - [ ] Normal Mode (No continues, aim for completing in your alloted lives)
+  - [ ] Score Tables for each ship/variable
+
 * TODO Enemies [0/3] -------------------------------------------------
   - [ ] Submarine
     - Appearance: Cannonball black with blue sheen,
@@ -21,6 +29,7 @@
     - [ ] Weapon  
     - [ ] Implemented
  
+
 * TODO Bosses [0/3] -------------------------------------------------
   - [ ] Mega Tank MK III "Land Crawler"
     - Appearance: Two treads with rails between and cannon that moves on rails
@@ -32,8 +41,10 @@
     - [ ] Implemented
  
  
-* TODO Levels [0%] -----------------------------------------------------
-  - [ ] Define comfortable speed
+* TODO Levels [14%] -----------------------------------------------------
+  - [ ] Define a template for tiles, 8 way slopes is a bit robotic.
+  - [X] Define comfortable speed (we know it takes about 10-15 seconds to 
+                                  scroll through a whole screen of information.)
   - [ ] *Islands/Coastline* [0/6]
     - [ ] Drawing
     - [ ] Tiles
@@ -77,3 +88,19 @@
     - [ ] Ememies Placed
     - [ ] Boss
     - [ ] Final Boss v 2.0
+
+* Considerations (Get promoted to Design section on acceptance)
+- "No Miss" Bonus every 10 areas. (run by psilord)
+- Mirroring feature with hidden point items as differences?
+- Zooming in/out (was mostly for helicopter based play - not thrilled anymore RB)
+- Single animated water tile as base layer (sinus waves) with land overlays
+- Focus beam/slow Spread shot/normal
+- 8 way digital movement with adjustable gate (square or octagon)
+- Extend system every x points then y points thereafter
+- Chance to recapture powerups after player death
+- Max Power powerups as a rarity (perhaps hidden)
+- Hidden bonus items in general (shoot pieces of scenery)
+- 2+ Player ships
+- Simple difficult mode (more enemy shots, suicide shots, aimed shots, shot speed)
+
+
