@@ -102,5 +102,8 @@
 - Hidden bonus items in general (shoot pieces of scenery)
 - 2+ Player ships
 - Simple difficult mode (more enemy shots, suicide shots, aimed shots, shot speed)
-- TMP art: https://github.com/RyanBurnside/shmup-test/blob/master/Resources/Sprites/shots.gif
+- TMP art: 
+  - https://github.com/RyanBurnside/shmup-test/blob/master/Resources/Sprites/shots.gif
+  - https://github.com/RyanBurnside/shmup-test/blob/master/Resources/Sprites/ships.gif
+
 
