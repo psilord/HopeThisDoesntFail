@@ -1,15 +1,14 @@
-;;;; HopeThisDoesntFail.asd
-
-(defpackage #:hopethisdoesntfail-asd
-  (:use :cl :asdf))
-
-(in-package #:hopethisdoesntfail-asd)
-
 (asdf:defsystem #:hopethisdoesntfail
-  :description "Describe HopeThisDoesntFail here"
-  :author "Your Name <your.name@example.com>"
-  :license "Specify license here"
+  :description "HopeThisDoesntFail is a shmup."
+  :author ("Peter Keller <psilord@cs.wisc.edu>"
+           "Ryan Burnside <pixeloutlaw@gmail.com>")
+  :license "MIT"
+  :version "0.0.0"
+  :depends-on (#:alexandria
+               #:golden-utils
+               #:origin
+               #:verbose
+               #:virality.engine)
   :serial t
   :components ((:file "package")
                (:file "hopethisdoesntfail")))
-
