@@ -12,5 +12,4 @@
   :serial t
   :components ((:file "package")
                (:file "common")
-	       (:file "put-into-virality")
                (:file "hopethisdoesntfail")))
