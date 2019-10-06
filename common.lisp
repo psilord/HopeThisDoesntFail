@@ -1,8 +1,8 @@
 (in-package #:hopethisdoesntfail)
 
 (v:define-options :hopethisdoesntfail
-  :window-width 1280
-  :window-height 720
+  :window-width 960
+  :window-height 1280
   :vsync :off
   :delta 1/120
   :title "Hope This Doesn't Fail"
@@ -14,7 +14,7 @@
   :tex (:levels "texture")
   :log-debug (:log "debug.log")
   :log-error (:log "error.log")
-  :ship-sheet (:levels "ships.gif")
+  :ship-sheet (:levels "ships.tiff")
   :ship-sheet-spec (:levels "ships.spec"))
 
 (defun start (scene-name)
@@ -26,6 +26,7 @@
 (v:define-prefab "cameras" (:library htdf)
   ("ortho"
    (c/cam:camera :active-p t
+		 :zoom 4
                  :mode :orthographic))
   ("perspective"
    (c/cam:camera :active-p t
