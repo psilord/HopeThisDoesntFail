@@ -41,7 +41,7 @@
    (%region-cuboid :accessor region-cuboid
                    :initarg :region-cuboid
                    :initform (reg:make-region-cuboid (v3:vec 0.0 0.0 0.0)
-						     -120 120 -160 160 0 0))))
+                                                     -120 120 -160 160 0 0))))
 
 ;; upon attaching, this component will store find the transform component
 ;; on the actor to which it has been attached and keep a direct reference to it.
@@ -74,8 +74,8 @@
            (move-direction (v3:scale move-direction (v:frame-time context)))
            ;; Finally, clip to the region.
            (move-direction (reg:clip-movement-vector move-direction
-						     current-translation
-						     region-cuboid)))
+                                                     current-translation
+                                                     region-cuboid)))
 
       (c/xform:translate transform move-direction))))
 
