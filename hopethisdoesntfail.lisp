@@ -4,17 +4,21 @@
 
 ;;; "HopeThisDoesntFail" goes here. Hacks and glory await!
 
+(v:define-texture sprite/ship-atlas (:texture-2d)
+  (:texture-min-filer :nearest)
+  (:texture-mag-filter :nearest)
+  (:data #(:ship-sheet)))
 
-
-
-
-
-
-
-
-
-
-
+(v:define-material sprite/ship-atlas
+  (:profiles (x/mat:u-mvp)
+   :shader shd/sprite:sprite
+   :uniforms ((:sprite.sampler 'sprite/ship-atlas)
+              (:opacity 1.0)
+              (:alpha-cutoff 0.1))
+   :blocks ((:block-name :spritesheet
+             :storage-type :buffer
+             :block-alias :spritesheet
+             :binding-policy :manual))))
 
 ;; ;;;;;;;;;
 ;; Component: player-movement
@@ -30,13 +34,7 @@
                :initform nil)
    (%max-velocity :accessor max-velocity
                   :initarg :max-velocity
-                  :initform .07f0)
-   (%translate-deadzone :accessor translate-deadzone
-                        :initarg :translate-deadzone
-                        :initform .1f0)
-   (%rotate-deadzone :accessor rotate-deadzone
-                     :initarg :rotate-deadzone
-                     :initform .1f0)
+                  :initform 256f0) ;; in pixels
    ;; We just hack in a boundary cube you can't go outside of. This is in the
    ;; local space of the actor to which this component is attached.
    ;; The format is minx, maxx, miny, maxy, minz, maxz
@@ -72,33 +70,15 @@
            (current-translation
              ;; TODO NOTE: Prolly should fix these to be external.
              (c/xform::current (c/xform::translation transform)))
+           ;; Put into pixels per second.
+           (move-direction (v3:scale move-direction (v:frame-time context)))
+           ;; Finally, clip to the region.
            (move-direction (clip-movement-vector move-direction
                                                  current-translation
                                                  region-cuboid)))
 
       (c/xform:translate transform move-direction))))
 
-
-
-
-
-
-
-(v:define-texture sprite/ship-atlas (:texture-2d)
-  (:texture-min-filer :nearest)
-  (:texture-mag-filter :nearest)
-  (:data #(:ship-sheet)))
-
-(v:define-material sprite/ship-atlas
-  (:profiles (x/mat:u-mvp)
-   :shader shd/sprite:sprite
-   :uniforms ((:sprite.sampler 'sprite/ship-atlas)
-              (:opacity 1.0)
-              (:alpha-cutoff 0.1))
-   :blocks ((:block-name :spritesheet
-             :storage-type :buffer
-             :block-alias :spritesheet
-             :binding-policy :manual))))
 
 
 (v:define-prefab "player-ship" (:library htdf)
@@ -120,19 +100,12 @@
                      :mode :sprite))))
 
 
-
-
 (v:define-prefab "test-scene" (:library htdf)
   (("camera" :copy "/cameras/ortho")
    #++(c/xform:transform :translate (v3:vec 0 0 1)))
 
-  (("player" :copy "/player-ship"))
+  (("player" :copy "/player-ship")))
 
-  #++(("cube" :copy "/mesh")
-      (c/xform:transform :translate (v3:vec 0 0 0)
-                         :rotate/inc (q:orient :local (v3:one) (/ pi 2))
-                         :scale 10)
-      (c/smesh:static-mesh :asset '(:virality.engine/mesh "cube.glb"))))
 
 
 (v:define-prefab-descriptor test-scene ()
