@@ -11,4 +11,5 @@
                #:virality.engine)
   :serial t
   :components ((:file "package")
+               (:file "common")
                (:file "hopethisdoesntfail")))

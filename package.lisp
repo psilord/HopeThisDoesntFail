@@ -1,10 +1,14 @@
 ;;;; package.lisp
 
+(in-package #:cl-user)
+
 (defpackage #:hopethisdoesntfail
-  (:use #:cl))
+  (:use #:cl)
+  (:export #:start))
 
 (defpackage #:hopethisdoesntfail.shaders
-  (:use #:cl #:vari #:virality.shaders))
+  (:use #:shadow.glsl #:umbra.common))
 
 (virality.nicknames:define-nicknames
-    (:virality.shaders :v/shd))
+  (:hopethisdoesntfail :htdf)
+  (:hopethisdoesntfail.shaders :htdf/shd))
