@@ -23,9 +23,7 @@
 ;; ;;;;;;;;;
 ;; Component: player-movement
 ;;
-;; First we need a component that allows the player to move around.
-;; We're going to left the left joystick place the player and the right one
-;; orient the player.
+;; Use dpad to move around, etc.
 ;; ;;;;;;;;;
 
 (v:define-component player-movement ()
