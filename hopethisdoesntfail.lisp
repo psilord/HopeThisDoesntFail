@@ -38,8 +38,9 @@
    ;; The format is minx, maxx, miny, maxy, minz, maxz
    (%region-cuboid :accessor region-cuboid
                    :initarg :region-cuboid
-                   :initform (reg:make-region-cuboid (v3:vec 0.0 0.0 0.0)
-                                                     -120 120 -160 160 0 0))))
+                   :initform (reg:make-region-cuboid
+                              (v3:vec 0f0 0f0 0f0)
+                              -120f0 120f0 -160f0 160f0 0f0 0f0))))
 
 ;; upon attaching, this component will store find the transform component
 ;; on the actor to which it has been attached and keep a direct reference to it.
