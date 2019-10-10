@@ -13,4 +13,7 @@
   :pathname "src"
   :components ((:file "package")
                (:file "common")
+	       (:file "textures")
+	       (:file "materials")
+	       (:file "component-player-move")
                (:file "hopethisdoesntfail")))
