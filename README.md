@@ -4,6 +4,19 @@ An STG with both classic elements and new ideas.
 
 A *Common Lisp* game.
 
+## Building
+ - cd ~/quicklisp/local-projects
+ - Remove any directories named: "umbra", "shadow", "origin", "golden-utils"
+ - git clone https://github.com/RyanBurnside/PloughmansPickle.git
+ - git clone https://github.com/mfiano/shadow.git
+ - git clone https://github.com/mfiano/umbra.git
+ - git clone https://github.com/psilord/HopeThisDoesntFail.git
+
+Then enter SBCL (prolly via swank in SLY/SLIME) and:
+
+SBCL> (ql:quickload :hopethisdoesntfail) (hopethisdoesntfail:start "htdf")
+
+
 ## Planning
 
  - No magic girls, military only.
@@ -30,7 +43,7 @@ A *Common Lisp* game.
    we'll compose them out of the smaller ones.
 
 ### Plan Comments
-One property I like is the big level sort of becomes an endurance test. Like, 
+One property I like is the big level sort of becomes an endurance test. Like,
 we can record pausings (and amount of time that was spent in pause)
 of the game and such as part of your score. No pauses might elicit
 a large bonus modifier, etc.
@@ -51,7 +64,7 @@ So a 30 minute game at 240x320 at 2 tiles a second:
 
 30 * 60 * 2 = 3600 tiles in the vertical dimension of the game board. And
 of course 15 tiles wide. For a grand total of 54,000 tiles comprising the
-entire level. 
+entire level.
 
 ### Breakdown of Zones
 Now, suppose we split the game into 50 Zones, then each zone is 3600
@@ -62,7 +75,7 @@ of 2 tiles a second).  ~30 seconds seems a pretty good to get a new
 
 | Zone | Visual Theme Summary |
 |---|---|
-|0-9  | Islands & Coastline  | 
+|0-9  | Islands & Coastline  |
 |10-19  | Swamps |
 |20-29  | Forests & lakes  |
 |30-39  | Scrubland & rocky out croppings |
