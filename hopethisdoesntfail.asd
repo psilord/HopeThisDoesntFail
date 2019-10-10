@@ -10,6 +10,7 @@
                #:verbose
                #:virality.engine)
   :serial t
+  :pathname "src"
   :components ((:file "package")
                (:file "common")
                (:file "hopethisdoesntfail")))
