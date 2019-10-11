@@ -5,6 +5,14 @@ An STG with both classic elements and new ideas.
 A *Common Lisp* game.
 
 ## Building
+
+Enter your SBCL repl and do this to get the latest quicklispi dist:
+
+SBCL> (ql:update-all-dists)
+SBCL> (quit)
+
+And then do this sequence:
+
  - cd ~/quicklisp/local-projects
  - Remove any directories named: "umbra", "shadow", "origin", "golden-utils"
  - git clone https://github.com/RyanBurnside/PloughmansPickle.git
