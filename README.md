@@ -8,9 +8,12 @@ A *Common Lisp* game.
  - cd ~/quicklisp/local-projects
  - Remove any directories named: "umbra", "shadow", "origin", "golden-utils"
  - git clone https://github.com/RyanBurnside/PloughmansPickle.git
+ - git clone https://github.com/psilord/HopeThisDoesntFail.git
  - git clone https://github.com/mfiano/shadow.git
  - git clone https://github.com/mfiano/umbra.git
- - git clone https://github.com/psilord/HopeThisDoesntFail.git
+ - git clone https://github.com/HackerTheory/ViralityEngine.git
+ - cd ViralityEngine
+ - git checkout develop
 
 Then enter SBCL (prolly via swank in SLY/SLIME) and:
 
