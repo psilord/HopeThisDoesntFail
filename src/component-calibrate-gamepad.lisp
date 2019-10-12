@@ -35,9 +35,6 @@
    ))
 
 
-
-
-
 (defmethod v:on-component-update ((self calibrate-gamepad))
   (with-accessors
         ((context v:context)
