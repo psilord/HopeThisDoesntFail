@@ -24,16 +24,21 @@
 
 (v:define-prefab "calibrate-gamepad" (:library htdf)
   (calibrate-gamepad
-   :left-analog-stick-start-position (v3:vec -20f0 10f0 0f0)
+   :left-analog-stick-start-position (v3:vec -30f0 0f0 0f0)
    :left-analog-stick-max-displacement 10f0
    :left-analog-stick-transform (v:ref "left-analog-stick"
                                        :component 'c/xform:transform)
-   :right-analog-stick-start-position (v3:vec 20f0 10f0 0f0)
+   :right-analog-stick-start-position (v3:vec 30f0 0f0 0f0)
    :right-analog-stick-max-displacement 10f0
    :right-analog-stick-transform (v:ref "right-analog-stick"
-                                        :component 'c/xform:transform))
+                                        :component 'c/xform:transform)
+
+   :dpad-start-position (v3:vec 0f0 0f0 0f0)
+   :dpad-max-displacement 10f0
+   :dpad-transform (v:ref "dpad" :component 'c/xform:transform))
 
   (("left-analog-stick" :copy "/mesh"))
+  (("dpad" :copy "/mesh"))
   (("right-analog-stick" :copy "/mesh")))
 
 
