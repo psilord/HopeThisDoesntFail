@@ -18,4 +18,5 @@
                (:file "materials")
                (:file "component-player-move")
                (:file "component-sprite")
+	       (:file "component-calibrate-gamepad")
                (:file "hopethisdoesntfail")))

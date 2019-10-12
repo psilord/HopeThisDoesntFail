@@ -29,7 +29,6 @@
   (with-accessors ((actor v:actor) (transform transform)) self
     (setf transform (v:component-by-type actor 'c/xform:transform))))
 
-
 (defmethod v:on-component-update ((self player-movement))
   (with-accessors ((context v:context) (transform transform)
                    (max-velocity max-velocity)
